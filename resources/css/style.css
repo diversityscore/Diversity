@@ -25,7 +25,10 @@ body {
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1;}
+.clearfix {
+    zoom: 1;
+}
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -120,7 +123,7 @@ h2:after {
     color: #e67e22;
     font-size: 120%;
     margin-right: 10px;
-    
+
     /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
@@ -218,15 +221,15 @@ header {
 }
 
 .logo {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     float: left;
     position: relative;
     margin: 10px 15px 15px 10px;
-   
+
 }
 
-.logo-black { 
+.logo-black {
     display: none;
     height: 50px;
     width: auto;
@@ -289,7 +292,9 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav { margin-top: 18px; }
+.sticky .main-nav {
+    margin-top: 18px;
+}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -297,8 +302,13 @@ header {
     color: #555;
 }
 
-.sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
 
 /* ----------------------------------------------- */
 /* FEATURES */
@@ -311,6 +321,7 @@ header {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
+
 /* ----------------------------------------------- */
 /* HOW IT WORKS SECTION */
 /* ----------------------------------------------- */
@@ -380,7 +391,7 @@ header {
 .top {
     height: 30vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(img/back.png);
+        url(img/back.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -411,7 +422,7 @@ header {
 }
 
 .diversity__gender,
-.diversity__industry ,
+.diversity__industry,
 .diversity__workexp,
 .diversity__function,
 .diversity__company,
@@ -419,7 +430,7 @@ header {
 .diversity__education,
 .diversity__inclusive,
 .diversity__origin,
-.diversity__category{
+.diversity__category {
     padding: 12px;
     text-transform: uppercase;
 }
@@ -469,6 +480,7 @@ header {
     letter-spacing: 1px;
     float: left;
 }
+
 /*
 .diversity__gender--percentage,
 .diversity__industry--percentage,
@@ -502,7 +514,7 @@ header {
     color: inherit;
     font-family: inherit;
     background-color: #f7f7f7;
-    float:auto;
+    float: auto;
     font-size: 125%;
     padding: 12px 15px;
     margin: 10px;
@@ -554,8 +566,13 @@ header {
 
 .add__emptype,
 .add__category,
-.add__description { width: 300px;}
-.add__value { width: 250px;}
+.add__description {
+    width: 300px;
+}
+
+.add__value {
+    width: 250px;
+}
 
 .add__btn {
     font-size: 35px;
@@ -707,16 +724,45 @@ header {
 
 
 
-.gender__title { color: #28B9B5; }
-.industry__title { color: #28B9B5; }
-.workexp__title { color: #28B9B5; }
-.functionexp__title { color: #28B9B5; }
-.company__title { color: #28B9B5; }
-.ageGroup__title { color: #28B9B5; }
-.education__title { color: #28B9B5; }
-.inclusion__title { color: #28B9B5; }
-.origin__title { color: #28B9B5; }
-.country__title { color: #28B9B5; }
+.gender__title {
+    color: #28B9B5;
+}
+
+.industry__title {
+    color: #28B9B5;
+}
+
+.workexp__title {
+    color: #28B9B5;
+}
+
+.functionexp__title {
+    color: #28B9B5;
+}
+
+.company__title {
+    color: #28B9B5;
+}
+
+.ageGroup__title {
+    color: #28B9B5;
+}
+
+.education__title {
+    color: #28B9B5;
+}
+
+.inclusion__title {
+    color: #28B9B5;
+}
+
+.origin__title {
+    color: #28B9B5;
+}
+
+.country__title {
+    color: #28B9B5;
+}
 
 
 .item {
@@ -724,8 +770,13 @@ header {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.item:first-child { border-top: 1px solid #e7e7e7; }
-.item:nth-child(even) { background-color: #f7f7f7; }
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
 
 .item__description {
     float: left;
@@ -867,23 +918,25 @@ header {
     display: none
 }
 
-.right { float: right; }
+.right {
+    float: right;
+}
 
 .gender .industry .workexp .functionexp .company .ageGroup .education .inclusion .origin .country .item__value {
     color: #28B9B5;
 }
 
 
- .gender__percentage .industry__percentage .workexp__percentage .functionexp__percentage .company__percentage,
- .item__delete--btn {
+.gender__percentage .industry__percentage .workexp__percentage .functionexp__percentage .company__percentage,
+.item__delete--btn {
     color: #FF5049;
 }
 
 .ageGroup__percentage .education__percentage .inclusion__percentage .origin__percentage .country__percentage,
- .item__delete--btn {
+.item__delete--btn {
     color: #FF5049;
 }
- 
+
 
 .item__delete {
     float: left;
@@ -900,21 +953,61 @@ header {
     display: none;
 }
 
-.item__delete--btn:focus { outline: none; }
-.item__delete--btn:active { transform: translateY(2px); }
+.item__delete--btn:focus {
+    outline: none;
+}
 
-.item:hover .item__delete--btn { display: block; }
-.item:hover .item__value { transform: translateX(-20px); }
-.item:hover .gender__percentage { transform: translateX(-20px); }
-.item:hover .industry__percentage { transform: translateX(-20px); }
-.item:hover .workexp__percentage { transform: translateX(-20px); }
-.item:hover .functionexp__percentage { transform: translateX(-20px); }
-.item:hover .company__percentage { transform: translateX(-20px); }
-.item:hover .ageGroup__percentage { transform: translateX(-20px); }
-.item:hover .education__percentage { transform: translateX(-20px); }
-.item:hover .inclusion__percentage { transform: translateX(-20px); }
-.item:hover .origin__percentage { transform: translateX(-20px); }
-.item:hover .country__percentage { transform: translateX(-20px); }
+.item__delete--btn:active {
+    transform: translateY(2px);
+}
+
+.item:hover .item__delete--btn {
+    display: block;
+}
+
+.item:hover .item__value {
+    transform: translateX(-20px);
+}
+
+.item:hover .gender__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .industry__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .workexp__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .functionexp__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .company__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .ageGroup__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .education__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .inclusion__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .origin__percentage {
+    transform: translateX(-20px);
+}
+
+.item:hover .country__percentage {
+    transform: translateX(-20px);
+}
 
 
 
@@ -926,6 +1019,7 @@ header {
 .section-cities {
     background-color: #f4f4f4;
 }
+
 .box img {
     width: 100%;
     height: auto;
@@ -1071,7 +1165,9 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
-*:focus {outline: none;}
+*:focus {
+    outline: none;
+}
 
 
 /* ----------------------------------------------- */
@@ -1106,7 +1202,7 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited, 
+.footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -1166,8 +1262,7 @@ footer p {
 
 .js--wp-1,
 .js--wp-2,
-.js--wp-3
-{
+.js--wp-3 {
     opacity: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -1183,5 +1278,3 @@ footer p {
 .js--wp-3.animated {
     opacity: 1;
 }
-
-
